@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="ご予約・ご相談・取材依頼などはこちらのフォームからお気軽にお問い合わせください。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  <script src="js/menu.js" defer></script>
+  <title>お問い合わせ｜和む - 心に残る和菓子</title>
+</head>
+
+<body class="contact">
+  <div class="wrapper">
+    <header>
+      <div id="header-wrapper">
+        <div class="navbar">
+          <a href="index.html"><img src="images/nagomu_logo.svg" alt="和む" id="logo"></a>
+
+          <nav id="nav">
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav"
+              aria-label="メニューを開閉">☰</button>
+            <ul>
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="products.html">お品書き</a></li>
+              <li><a href="store.html">店舗情報</a></li>
+              <li><a href="about.html">和むとは</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div><!-- header-wrapper end -->      
+    </header>
+
+    <main>
+      <h1>お問い合わせ</h1>
+
+      <form action="form.php" method="post">
+        <div>
+          <label for="name">お名前</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+
+        <div>
+          <label for="email">メール</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+
+        <div>
+          <label>件名
+            <select name="subject" required>
+              <option value="">選択してください</option>
+              <option value="商品について">商品について</option>
+              <option value="ご注文について">ご注文について</option>
+              <option value="その他">その他</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">送信する</button>
+      </form>
+    </main>
+  </div><!-- wrapper end -->
+
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">和む ～心に残る和菓子～</p>
+
+      <ul class="footer-nav">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="products.html">お品書き</a></li>
+        <li><a href="store.html">店舗情報</a></li>
+        <li><a href="about.html">和むとは</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy.html">個人情報の取扱い</a></li>
+      </ul>
+
+      <ul class="footer-sns">
+        <li><a href="#" aria-label="Twitter"><img src="images/x.svg" alt="X"></a></li>
+        <li><a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a></li>
+      </ul>
+
+      <p class="copyright">&copy; 2025 Nagomu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
